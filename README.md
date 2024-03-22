@@ -1,4 +1,4 @@
-# YZM_208_odev
+# Gaussian_Bayes_Algoritması_ve_Optimizasyonu
 ## GİRİŞ
 Naive Bayes sınıflandırma, olasılık temelli bir sınıflandırma algoritmasıdır. Diyabet veri kümesi üzerinde bu algoritma uygulanarak, hastaların diyabet olup olmadığını tahmin etmeye çalışırız. Bu proje, bu sınıflandırma algoritmasının uygulanmasını, hiperparametre optimizasyonunu ve veri ön işleme adımlarını içerir.
 ## Metot
@@ -9,7 +9,7 @@ Gaussian Naive Bayes modeli kullanılarak eğitim verisiyle model eğitilir. Bu 
 ### Model Hiperparametre Optimizasyonu: 
 İki farklı optimizasyon yöntemi kullanılarak hiperparametre optimizasyonu yapılır. İlk olarak Grid Search ve ardından Randomized Search yöntemi uygulanır. Grid Search, belirli bir hiperparametre aralığında tüm kombinasyonları deneyerek en iyi sonucu veren hiperparametreleri bulurken, Randomized Search rastgele seçilen bir alt kümeden deneme yaparak daha geniş bir arama alanını keşfeder.
 ### Veri Ön İşleme:
-Veri ölçeklendirme ve normalleştirme adımları gerçekleştirilir. Veri ölçeklendirme, her bir özellik sütununu belirli bir aralığa yeniden ölçeklendirerek, algoritmanın daha iyi performans göstermesini sağlar. Normalleştirme ise verinin dağılımını değiştirerek, veri setindeki her bir özelliğin dağılımını belirli bir şekilde yeniden düzenler. Bu çalışmada, Standart Ölçekleme ve Power Transform yöntemleri kullanılmıştır. Burada power transformun tercih edilme nedeni power transform algoritması veri setinin dağılımını normal dağılıma yaklaştırır. Bu da Gaussian Naive Bayes algortimasının daha iyi sonuç vermesini sağlar.
+Veri ölçeklendirme ve normalleştirme adımları gerçekleştirilir. Veri ölçeklendirme, her bir özellik sütununu belirli bir aralığa yeniden ölçeklendirerek, algoritmanın daha iyi performans göstermesini sağlar. Normalleştirme ise verinin dağılımını değiştirerek, veri setindeki her bir özelliğin dağılımını belirli bir şekilde yeniden düzenler. Bu çalışmada, Standart Ölçekleme ve Power Transform yöntemleri kullanılmıştır. Burada Power Transformun tercih edilme nedeni Power Transform algoritması veri setinin dağılımını normal dağılıma yaklaştırır. Bu da Gaussian Naive Bayes algortimasının daha iyi sonuç vermesini sağlar.
 ### Model Performansının Değerlendirilmesi:
 Her bir önişleme adımından sonra modelin performansı değerlendirilir. Performans ölçütleri arasında doğruluk (accuracy), karışıklık matrisi (confusion matrix) ve sınıflandırma raporu (classification report) bulunur.
 ## Sonuçlar ve Yorum
